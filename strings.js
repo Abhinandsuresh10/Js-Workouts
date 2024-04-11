@@ -44,3 +44,15 @@
 // console.log(str.charAt(5)); // j
 
 
+//-------Replace String-------//
+// let myText = "I am a string";
+// const newString = myText.replace("string", "sausage");
+// console.log(newString);
+
+
+//-------Immutable String-------//
+// let originalString = "Hello";
+
+// let modifiedString = originalString.toUpperCase(); // Convert to uppercase
+// console.log("Original String:", originalString); // Output: "Hello"
+// console.log("Modified String:", modifiedString); // Output: "HELLO"

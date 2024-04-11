@@ -94,12 +94,19 @@
 
 
 //reduce(): reduce an array to a single value
-let numbers = [10, 5, 20, 15, 8];
+// let numbers = [10, 5, 20, 15, 8];
 
-let max = numbers.reduce((maxValue, currentValue) => {
-    return (currentValue > maxValue) ? currentValue : maxValue;
-}, numbers[0]);
+// let max = numbers.reduce((maxValue, currentValue) => {
+//     return (currentValue > maxValue) ? currentValue : maxValue;
+// }, numbers[0]);
 
-console.log(max); // Output: 20 (the maximum value in the array)
+// console.log(max); // Output: 20 (the maximum value in the array)
+
+
+//------------array join()------------//
+// const myArray = ["I", "love", "chocolate", "frogs"];
+// const newArray = myArray.join(' ');
+
+// console.log(newArray);
 
 
