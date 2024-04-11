@@ -24,14 +24,14 @@
 
 
 //------------concat------------// joins two or more strings
-// let str1 = "123";
-// let str2 = "456";
-// let str3 = "789";
+let str1 = "123";
+let str2 = "456";
+let str3 = "789";
 
-// let res = str1 + str2 + str3;
-// let res2 = "hello" + 1234 + " Vishnu Mohan";
-// console.log(res); // 123456789
-// console.log(res2); // hello1234 Vishnu Mohan
+let res = str1 + str2 + str3;
+let res2 = "hello" + 1234 + " Vishnu Mohan";
+console.log(res); // 123456789
+console.log(res2); // hello1234 Vishnu Mohan
 
 
 //------------str.replace(searchVal, newVal)------------//
