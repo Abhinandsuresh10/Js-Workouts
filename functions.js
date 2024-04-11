@@ -5,6 +5,8 @@
 // console.log(result); // Output: 30
 
 
+
+//------------Arrow vs Regular------------//
 // const hai = (person) => {
 //     console.log(`hello ${person}`);
 // };
@@ -12,11 +14,38 @@
 
 // function hello(name) {
 //     console.log(`hello ${name}`);
-// }
+// };
 // hello('Ressshhh')
 
 
 
-(function () {
-    console.log('Hello');
-})();
+//------------Anonymous------------//
+// (function () {
+//     console.log('Hello');
+// })();
+
+
+
+//------------Random------------//
+function random(number) {
+    return Math.floor(Math.random() * number);
+};
+console.log(random(10));
+
+
+
+//------------Generator functions------------//
+function* generateSequence() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+const sequence = generateSequence();
+
+console.log(sequence.next())
+
+let str = "Vishnu"
+console.log(str[2])
+
+console.log(sequence.next())
+console.log(sequence.next())

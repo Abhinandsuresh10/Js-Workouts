@@ -9,7 +9,6 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(uniqueArray);
-console.log(arr.includes(3)); // includes() checks if a value is present in an array, returning true or false.
 
 
 //Basic method delete duplicate
@@ -25,3 +24,41 @@ console.log(arr.includes(3)); // includes() checks if a value is present in an a
 
 // const uniqueArray = arr.slice(0, j + 1);
 // console.log(uniqueArray);
+
+
+// Two sum
+// function twosum(arr,target){
+//     for(i=0;i<arr.length;i++){
+//         for(j=i+1;j<arr.length;j++){
+//             if(arr[i]+arr[j]==target){
+//                 return [i,j]
+//             }
+//         }
+//     }
+
+// }
+// console.log(twosum([1,2,3,4,5],6))
+
+
+// Prime
+// function prime(n){
+//     let flag=0;
+//     for(i=2;i<=n/2;i++){
+//         if(n%i==0){
+//             flag=1;
+//             break
+//         }
+//     }
+//     if(flag==0){
+//         console.log(`${n} is a prime number.`);
+//     }
+//     else{
+//         console.log(`${n} is not prime number.`);
+//     }
+    
+// }
+
+// prime(29)
+// prime(4)
+
+
