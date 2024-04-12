@@ -14,6 +14,3 @@ promise.then((value) => {
     // If something goes wrong, log an error message
     console.log('Rejected:', error);
 });
-
-
-
