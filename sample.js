@@ -19,7 +19,7 @@
 //-------------------------------------------------------------------------//
 
 
-//-----Palindrome with loop-----//
+//-------------------Palindrome with loop-------------------//
 let str = 'malayalam';
 let isPalindrome = true;
 
@@ -43,8 +43,40 @@ if (isPalindrome) {
 //-------------------------------------------------------------------------//
 
 
-//-----Palindrome with functions -----//
+//-------------------Palindrome with functions-------------------//
+// let str = 'malayalam';
+// if (str == str.split('').reverse().join('')) {
+//     console.log(`${str} is palindrome`);
+// } else {
+//     console.log(`${str} is not palindrome`);
+// }
+//-------------------------------------------------------------------------//
 
 
+//-------------------function palindrome-------------------//
+function isPalindrome (str) {
+    if (str == str.split('').reverse().join('')) {
+        console.log(`${str} is palindrome`);
+    } else {
+        console.log(`${str} is not palindrome`);
+    }
+}
 
+isPalindrome('malayalam');
+isPalindrome('vishnu');
+//-------------------------------------------------------------------------//
+
+
+//-------------------sum of first 2 index-------------------//
+// const arr1 = [10, 20, 30, 40];
+// const arr2 = [50, 60, 70, 80];
+
+// let sumArr = arr1[0] + arr2[0];
+
+// console.log(`sum = ${sumArr}`);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Unique element-------------------//
+        
 //-------------------------------------------------------------------------//
