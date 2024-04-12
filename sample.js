@@ -20,26 +20,26 @@
 
 
 //-------------------Palindrome with loop-------------------//
-let str = 'malayalam';
-let isPalindrome = true;
+// let str = 'malayalam';
+// let isPalindrome = true;
 
-let leftIndex = 0;
-let rightIndex = str.length-1;
+// let leftIndex = 0;
+// let rightIndex = str.length-1;
 
-for (let i = 0; i < str.length / 2; i++){
-    if (str[leftIndex] !== str[rightIndex]) {
-        isPalindrome = false;
-        break;
-    }
-    leftIndex++;
-    rightIndex--;
-}
+// for (let i = 0; i < str.length / 2; i++){
+//     if (str[leftIndex] !== str[rightIndex]) {
+//         isPalindrome = false;
+//         break;
+//     }
+//     leftIndex++;
+//     rightIndex--;
+// }
 
-if (isPalindrome) {
-    console.log(`${str} is palindrome`);
-} else {
-    console.log(`${str} is not palindrome`);
-}
+// if (isPalindrome) {
+//     console.log(`${str} is palindrome`);
+// } else {
+//     console.log(`${str} is not palindrome`);
+// }
 //-------------------------------------------------------------------------//
 
 
@@ -54,16 +54,16 @@ if (isPalindrome) {
 
 
 //-------------------function palindrome-------------------//
-function isPalindrome (str) {
-    if (str == str.split('').reverse().join('')) {
-        console.log(`${str} is palindrome`);
-    } else {
-        console.log(`${str} is not palindrome`);
-    }
-}
+// function isPalindrome (str) {
+//     if (str == str.split('').reverse().join('')) {
+//         console.log(`${str} is palindrome`);
+//     } else {
+//         console.log(`${str} is not palindrome`);
+//     }
+// }
 
-isPalindrome('malayalam');
-isPalindrome('vishnu');
+// isPalindrome('malayalam');
+// isPalindrome('vishnu');
 //-------------------------------------------------------------------------//
 
 
@@ -77,6 +77,40 @@ isPalindrome('vishnu');
 //-------------------------------------------------------------------------//
 
 
-//-------------------Unique element-------------------//
-        
+//-------------------Sum using promise-------------------//
+// function findSum(num1, num2) {
+//     return new Promise((resolve, reject) => {
+//         resolve(num1 + num2);
+//     });
+// }
+
+// findSum(10, 40)
+//     .then(result => console.log(`The sum is: ${result}`))
+//     .catch(error => console.error(error.message));
+//-------------------------------------------------------------------------//
+
+
+//-------------------async await-------------------//
+async function fetchData(dataNumber) {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            console.log(`Data ${dataNumber} fetched`);
+            resolve();
+        }, 2000);
+    });
+}
+
+async function getAllData() {
+    console.log('Getting data 1....');
+    await fetchData(1);
+    console.log('Getting data 2....');
+    await fetchData(2);
+    console.log('Getting data 3....');
+    await fetchData(3);
+    console.log('Getting data 4....');
+    await fetchData(4);
+    console.log('Getting data 5....');
+}
+
+getAllData();
 //-------------------------------------------------------------------------//
