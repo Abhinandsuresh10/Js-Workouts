@@ -18,7 +18,7 @@ let obj = {
 
 
 //---object seal---//
-Object.seal(obj);
-obj.name = "John";
+// Object.seal(obj);
+// obj.name = "John";
 
-console.log(obj);
+// console.log(obj);
