@@ -33,6 +33,7 @@
 // console.log(random(10000));
 
 
+
 //------------Generator functions------------//
 // function* generateSequence() {
 //     yield 1;
@@ -58,9 +59,9 @@ function* GeneratorFunction(a) {
 }
 
 const generator = GeneratorFunction(5);
-let set=setInterval(() => {
-    console.log(generator.next())
-},1000)
+let set = setInterval(() => {
+    console.log(generator.next());
+}, 1000);
 
 setTimeout(() => {
     clearInterval(set)
