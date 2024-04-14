@@ -9,8 +9,7 @@
 // function add(x,y){
 //     return x+y;
 // }
-// console.log(hello(add,5,7))
-
+// console.log(hello(add,5,5))
 
 //returning  a  function eg: HOF//
 
@@ -25,15 +24,15 @@
 
 //FUNCTION COMPOSITION//
 
-// function add(x){
-//     return x+3;
-// }
+function add(x){
+    return x+3;
+}
 
-// function multi(x){
-//     return x*3;
-// }
-// const output=multi(add(4));
-// console.log(output);
+function multi(x){
+    return x*3;
+}
+const output=multi(add(4));
+console.log(output);
 
 
 
@@ -42,9 +41,9 @@
 
 // function a(b){
 //     b()
-//     console.log('hi');
+//     console.log('vishnu');
 //     function b(){
-//         console.log('haloo');
+//         console.log('hello');
 //     }
 // }
 // a();
@@ -992,7 +991,6 @@
 // console.log(a(ab))   
 
 //SECOND LARGEST NUMBER//
-
-const arr = [8,1,2,3,7,5,9]
-const a=arr.sort((a,b)=>b-a)
-console.log(a[1])
+// const arr = [8,1,2,3,7,5,9]
+// const a=arr.sort((a,b)=>b-a)
+// console.log(a[1])

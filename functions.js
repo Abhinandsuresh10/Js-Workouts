@@ -59,6 +59,7 @@ function* GeneratorFunction(a) {
 }
 
 const generator = GeneratorFunction(5);
+
 let set = setInterval(() => {
     console.log(generator.next());
 }, 1000);
