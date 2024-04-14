@@ -495,9 +495,9 @@ console.log(output);
 
 //EMPTY OBJECT//
 
-// let obj={};
-// let b=Object.keys(obj);
-// console.log(b)
+let obj={};
+let b=Object.keys(obj);
+console.log(b)
 
 //FIND PERSON AGED LESS THAN 54//
 
