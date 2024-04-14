@@ -495,22 +495,22 @@ console.log(output);
 
 //EMPTY OBJECT//
 
-let obj={};
-let b=Object.keys(obj);
-console.log(b)
+// let obj={};
+// let b=Object.keys(obj);
+// console.log(b)
 
 //FIND PERSON AGED LESS THAN 54//
 
-// let objj = [
-//    {name : 'a', age : 25},
-//    {name : 'b', age : 67},
-//    {name : 'c', age : 18},
-//    {name : 'd', age : 54}
-// ]
-// const b=objj.filter((num)=>{
-//    return num.age<=54
-// })
-// console.log(b);
+let objj = [
+   {name : 'a', age : 25},
+   {name : 'b', age : 67},
+   {name : 'c', age : 18},
+   {name : 'd', age : 54}
+]
+const b=objj.filter((num)=>{
+   return num.age<=54
+})
+console.log(b);
 
 //BITWISE AND//
 
