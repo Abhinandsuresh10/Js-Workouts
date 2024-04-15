@@ -18,7 +18,7 @@
 //     return function(name){
 //         console.log(hello + " " + name);
 //     }
-// } 
+// }
 // const hi=greet('hello');
 // hi('ri');
 
@@ -106,7 +106,7 @@
 // const b= a.padStart(5,'0')
 // console.log(b);
 
-//CHARTAT STRING METHODsdqws   //   
+//CHARTAT STRING METHODsdqws   //
 
 // const a='hiii hello';
 // const b= a.charAt(7);
@@ -269,7 +269,7 @@
 //   }
   
 //   const john = new Person('John', 30);
-//   john.greet(); 
+//   john.greet();
   
  //ASYNCHRONOUS//
 
@@ -478,19 +478,19 @@
 
 //SUM WTH PROMISE//
 
-function add(num1,num2){
-   return new Promise((resolve,reject)=>{
-      let sum = num1+num2;
-      resolve(sum);
-   })
-}
-add(10,5)
-.then(result=>{
-   console.log(result);
-})
-.catch(error=>{
-   console.log(error)
-})
+// function add(num1,num2){
+//    return new Promise((resolve,reject)=>{
+//       let sum = num1+num2;
+//       resolve(sum);
+//    })
+// }
+// add(10,5)
+// .then(result=>{
+//    console.log(result);
+// })
+// .catch(error=>{
+//    console.log(error)
+// })
 
 
 //EMPTY OBJECT//
@@ -893,10 +893,10 @@ add(10,5)
 //             }
 //       }
 //       return -1;
-// }   
+// }
 // const a=[1,2,3,4,5,6]
 // const target=4
-// console.log(ab(a,target))           
+// console.log(ab(a,target))
 
 //CHECK IF AN ARRAY CONTAINS GIVEN ELEMENT/
 
@@ -988,9 +988,47 @@ add(10,5)
 //       return result;
 // }
 // const ab=[1,2,3,4,4,5,5,5,3,2]
-// console.log(a(ab))   
+// console.log(a(ab))
 
 //SECOND LARGEST NUMBER//
 // const arr = [8,1,2,3,7,5,9]
 // const a=arr.sort((a,b)=>b-a)
 // console.log(a[1])
+
+
+// function sum(num1, num2) {
+//    return new Promise((resolve, reject) => {
+//       sum = num1 + num2;
+//       resolve(sum)
+//    })
+// };
+
+// sum(10, 10)
+// .then(result => {
+//    console.log(result);
+// })
+// .catch(error => {
+//    console.log(error)
+// });
+
+
+
+
+// Constructor function for creating Person objects
+function Person(name, age) {
+   this.name = name;
+   this.age = age;
+}
+
+// Adding a method to the prototype of Person
+Person.prototype.sayHello = function() {
+   console.log("Hello, my name is " + this.name + " and I'm " + this.age + " years old.");
+};
+
+// Creating an instance of Person
+const person1 = new Person("Alice", 30);
+
+// Accessing properties and method
+console.log(person1.name);  // Output: Alice
+console.log(person1.age);   // Output: 30
+person1.sayHello();         // Output: Hello, my name is Alice and I'm 30 years old.
