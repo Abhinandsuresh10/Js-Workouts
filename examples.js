@@ -1013,7 +1013,7 @@
 
 
 
-
+//PROTOTYPE
 // Constructor function for creating Person objects
 function Person(name, age) {
    this.name = name;
