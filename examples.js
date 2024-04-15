@@ -24,15 +24,15 @@
 
 //FUNCTION COMPOSITION//
 
-function add(x){
-    return x+3;
-}
+// function add(x){
+//     return x+3;
+// }
 
-function multi(x){
-    return x*3;
-}
-const output=multi(add(4));
-console.log(output);
+// function multi(x){
+//     return x*3;
+// }
+// const output=multi(add(4));
+// console.log(output);
 
 
 
@@ -478,19 +478,19 @@ console.log(output);
 
 //SUM WTH PROMISE//
 
-// function add(num1,num2){
-//    return new Promise((resolve,rejrcct)=>{
-//       let sum = num1+num2;
-//       resolve(sum);
-//    })
-// }
-// add(8,9)
-// .then(result=>{
-//    console.log(result);
-// })
-// .catch(error=>{
-//    console.log(error)
-// })
+function add(num1,num2){
+   return new Promise((resolve,reject)=>{
+      let sum = num1+num2;
+      resolve(sum);
+   })
+}
+add(10,5)
+.then(result=>{
+   console.log(result);
+})
+.catch(error=>{
+   console.log(error)
+})
 
 
 //EMPTY OBJECT//
@@ -501,16 +501,16 @@ console.log(output);
 
 //FIND PERSON AGED LESS THAN 54//
 
-let objj = [
-   {name : 'a', age : 25},
-   {name : 'b', age : 67},
-   {name : 'c', age : 18},
-   {name : 'd', age : 54}
-]
-const b=objj.filter((num)=>{
-   return num.age<=54
-})
-console.log(b);
+// let objj = [
+//    {name : 'a', age : 25},
+//    {name : 'b', age : 67},
+//    {name : 'c', age : 18},
+//    {name : 'd', age : 54}
+// ]
+// const b=objj.filter((num)=>{
+//    return num.age<=54
+// })
+// console.log(b);
 
 //BITWISE AND//
 
