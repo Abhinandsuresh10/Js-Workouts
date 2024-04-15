@@ -1013,22 +1013,4 @@
 
 
 
-//PROTOTYPE
-// Constructor function for creating Person objects
-function Person(name, age) {
-   this.name = name;
-   this.age = age;
-}
-
-// Adding a method to the prototype of Person
-Person.prototype.sayHello = function() {
-   console.log("Hello, my name is " + this.name + " and I'm " + this.age + " years old.");
-};
-
-// Creating an instance of Person
-const person1 = new Person("Alice", 30);
-
-// Accessing properties and method
-console.log(person1.name);  // Output: Alice
-console.log(person1.age);   // Output: 30
-person1.sayHello();         // Output: Hello, my name is Alice and I'm 30 years old.
+  
