@@ -7,6 +7,7 @@
 
 // const obj = new greeting('Vishnu'); // Hello Vishnu
 
+
 //PROTOTYPE
 function Person(name, age) {
    this.name = name;

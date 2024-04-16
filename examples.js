@@ -1014,3 +1014,16 @@
 
 
   
+function outerFunction() {
+   const outerVariable = 'Outer';
+   
+   function innerFunction() {
+       const innerVariable = 'Inner';
+       console.log(outerVariable); // Can access outerVariable
+   }
+
+   innerFunction();
+   console.log(innerVariable); // Error: innerVariable is not defined
+}
+
+outerFunction();
