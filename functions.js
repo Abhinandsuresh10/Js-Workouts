@@ -33,6 +33,26 @@
 // console.log(random(10000));
 
 
+//------------Pure Functions------------//
+// function add(a, b) {
+//     return a + b;
+// }
+
+// const result = add(10,10);
+// console.log(result);
+
+
+//------------Impure Functions------------//
+let total = 5;
+
+function addTotal(num) {
+    total += num;
+}
+
+addTotal(5);
+
+console.log(total);
+
 
 //------------Generator functions------------//
 // function* generateSequence() {
@@ -52,18 +72,18 @@
 
 
 //---Generate multiples on each seconds---//
-function* GeneratorFunction(a) {
-    for (let i = 1; i <=10; i++){
-        yield a * i
-    }
-}
+// function* GeneratorFunction(a) {
+//     for (let i = 1; i <=10; i++){
+//         yield a * i
+//     }
+// }
 
-const generator = GeneratorFunction(5);
+// const generator = GeneratorFunction(5);
 
-let set = setInterval(() => {
-    console.log(generator.next());
-}, 1000);
+// let set = setInterval(() => {
+//     console.log(generator.next());
+// }, 1000);
 
-setTimeout(() => {
-    clearInterval(set)
-}, 11000);
+// setTimeout(() => {
+//     clearInterval(set)
+// }, 11000);

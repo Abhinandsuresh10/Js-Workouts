@@ -61,8 +61,5 @@
 //--------string reverse--------//
 let str = 'Hello World';
 let newStr = str.split(' ').reverse().join(' ');
-let splitStr = str.split(' ');
-
 console.log(newStr);
-console.log(splitStr);
 //-----------------------------//
