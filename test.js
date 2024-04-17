@@ -119,3 +119,9 @@
 // });
 
 // console.log(evenNumbers);
+
+
+// PURE FUNCTION
+(function () {
+    console.log('Hello');
+})();

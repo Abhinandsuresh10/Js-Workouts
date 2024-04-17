@@ -1093,19 +1093,18 @@ console.log(b);
 
 
 // Factory Function
-// function createPerson(name, age) {
-//    return {
-//      name: name,
-//      age: age,
-//      greet: function() {
-//        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
-//      }
-//    };
-//  }
- 
-//  const person1 = createPerson('Vishnu', 24);
-//  const person2 = createPerson('Reshna', 24);
- 
-//  person1.greet();
-//  person2.greet();
- 
+function createPerson(name, age) {
+  return {
+    name: name,
+    age: age,
+    greet: function () {
+      console.log(`hello, my name is ${this.name} and iam ${this.age} years old`);
+    }
+  };
+}
+
+const person1 = createPerson('Vishnu', 24);
+const person2 = createPerson('Reshna', 24);
+
+person1.greet();
+person2.greet();
