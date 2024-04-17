@@ -13,12 +13,12 @@ let obj = {
 
 
 //---object freeze---//
-// Object.freeze(obj);
-// obj.name = "John";
+Object.freeze(obj);
+obj.name = "John";
 
 
 //---object seal---//
-// Object.seal(obj);
-// obj.name = "John";
+Object.seal(obj);
+obj.name = "John";
 
 // console.log(obj);

@@ -58,13 +58,13 @@
 
 //CALL//
 
-// const person={
-//     name:'razik'
+// const person = {
+//    name: 'razik'
 // };
 // function greet(message){
 //     console.log(message + ' '+ this.name)
 // }
-// greet.call(person,'hi');
+// greet.call(person, 'hi');
 
 
 //APPLY//
@@ -159,12 +159,12 @@
 
 //SUM WITH REDUCE//
 
-// const a=[1,2,3,4];
-// const b=a.reduce(function(acc,curr){
-//     let sum=curr+acc;
-//     return sum;
-// },0)
-// console.log(b);
+const a=[1,2,3,4];
+const b=a.reduce(function(acc,curr){
+    let sum=curr+acc;
+    return sum;
+},0)
+console.log(b);
 
 //FIND IN ARRAY METHOD//
 
@@ -1012,18 +1012,100 @@
 // });
 
 
-
-  
-function outerFunction() {
-   const outerVariable = 'Outer';
+//closure
+// function outerFunction() {
+//    const outerVariable = 'Outer';
    
-   function innerFunction() {
-       const innerVariable = 'Inner';
-       console.log(outerVariable); // Can access outerVariable
-   }
+//    function innerFunction() {
+//        const innerVariable = 'Inner';
+//        console.log(outerVariable);
+//    }
 
-   innerFunction();
-   console.log(innerVariable); // Error: innerVariable is not defined
-}
+//    innerFunction();
+//    console.log(innerVariable);
+// }
 
-outerFunction();
+// outerFunction();
+
+
+//IIFE
+// (function() {
+//   console.log("This is an IIFE!");
+// })();
+
+// (function () {
+//    console.log('This is a sample');
+// })();
+
+// const persons = {
+//    name: 'vishnu'
+// };
+// function greet(message) {
+//    console.log(message + '' + this.name);
+// }
+// greet.call(persons, 'hi');
+
+
+// Rest Operator
+// function exampleFunction(...args) {
+//    console.log(args);
+// }
+
+// exampleFunction(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+
+// Deep Copy
+// const person = {
+//    name: 'Vishnu',
+//    age: 25,
+//    adress: {
+//       state: 'Kerala',
+//       city: 'Calicut'
+//    }
+// };
+
+// const result = JSON.parse(JSON.stringify(person));
+
+// result.adress.city = 'London';
+
+// console.log(person);
+// console.log(result);
+
+
+// Shallow Copy
+// const person = {
+//    name: 'Vishnu',
+//    age: 25,
+//    adress: {
+//       state: 'Kerala',
+//       city: 'Calicut'
+//    }
+// };
+
+// const result = { ...person }
+
+// result.adress.city = 'London';
+
+// console.log(person);
+// console.log(result);
+
+
+
+
+// Factory Function
+// function createPerson(name, age) {
+//    return {
+//      name: name,
+//      age: age,
+//      greet: function() {
+//        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+//      }
+//    };
+//  }
+ 
+//  const person1 = createPerson('Vishnu', 24);
+//  const person2 = createPerson('Reshna', 24);
+ 
+//  person1.greet();
+//  person2.greet();
+ 
