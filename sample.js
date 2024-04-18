@@ -78,39 +78,39 @@
 
 
 //-------------------Sum using promise-------------------//
-function findSum(num1, num2) {
-    return new Promise((resolve, reject) => {
-        resolve(num1 + num2);
-    });
-}
+// function findSum(num1, num2) {
+//     return new Promise((resolve, reject) => {
+//         resolve(num1 + num2);
+//     });
+// }
 
-findSum(10, 40)
-    .then(result => console.log(`The sum is: ${result}`))
-    .catch(error => console.error(error.message));
+// findSum(10, 40)
+//     .then(result => console.log(`The sum is: ${result}`))
+//     .catch(error => console.error(error.message));
 //-------------------------------------------------------------------------//
 
 
 //-------------------async await-------------------//
-async function fetchData(dataNumber) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            console.log(`Data ${dataNumber} fetched`);
-            resolve();
-        }, 2000);
-    });
-}
+// async function fetchData(dataNumber) {
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             console.log(`Data ${dataNumber} fetched`);
+//             resolve();
+//         }, 2000);
+//     });
+// }
 
-async function getAllData() {
-    console.log('Getting data 1....');
-    await fetchData(1);
-    console.log('Getting data 2....');
-    await fetchData(2);
-    console.log('Getting data 3....');
-    await fetchData(3);
-    console.log('Getting data 4....');
-    await fetchData(4);
-    console.log('Getting data 5....');
-}
+// async function getAllData() {
+//     console.log('Getting data 1....');
+//     await fetchData(1);
+//     console.log('Getting data 2....');
+//     await fetchData(2);
+//     console.log('Getting data 3....');
+//     await fetchData(3);
+//     console.log('Getting data 4....');
+//     await fetchData(4);
+//     console.log('Getting data 5....');
+// }
 
-getAllData();
+// getAllData();
 //-------------------------------------------------------------------------//
