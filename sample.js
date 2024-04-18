@@ -78,15 +78,15 @@
 
 
 //-------------------Sum using promise-------------------//
-// function findSum(num1, num2) {
-//     return new Promise((resolve, reject) => {
-//         resolve(num1 + num2);
-//     });
-// }
+function findSum(num1, num2) {
+    return new Promise((resolve, reject) => {
+        resolve(num1 + num2);
+    });
+}
 
-// findSum(10, 40)
-//     .then(result => console.log(`The sum is: ${result}`))
-//     .catch(error => console.error(error.message));
+findSum(10, 40)
+    .then(result => console.log(`The sum is: ${result}`))
+    .catch(error => console.error(error.message));
 //-------------------------------------------------------------------------//
 
 

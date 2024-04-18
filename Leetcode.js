@@ -54,8 +54,7 @@ function prime(n){
     }
     else{
         console.log(`${n} is not prime number.`);
-    }
-    
+    } 
 }
 
 prime(29)
