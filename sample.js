@@ -132,3 +132,16 @@
 // } while (num <= 50);
 //-------------------------------------------------------------------------//
 
+
+//-------------------Largest string in an array-------------------//
+// const fruits = ["Apple","Pomegranates"];
+
+// const newFruits = fruits.reduce((acc, curr) => {
+//     if (acc.length < curr.length) {
+//         acc = curr;
+//         return acc;
+//     }
+// });
+
+// console.log(`The largest string is : ${newFruits}`);
+//-------------------------------------------------------------------------//
