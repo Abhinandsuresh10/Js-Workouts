@@ -59,6 +59,3 @@ function prime(n){
 
 prime(29)
 prime(4)
-
-
-    

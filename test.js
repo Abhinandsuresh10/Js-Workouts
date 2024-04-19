@@ -122,6 +122,20 @@
 
 
 // PURE FUNCTION
-(function () {
-    console.log('Hello');
-})();
+// (function () {
+//     console.log('Hello');
+// })();
+
+
+// AKSHAY SAINI
+
+getName();
+
+
+var x = 10;
+console.log(x);
+
+function getName() {
+    console.log('Hello JavaScript');
+}
+
