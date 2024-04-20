@@ -125,4 +125,3 @@ console.log(mapDouble);
 (function () {
     console.log('Hello');
 })();
-
