@@ -104,11 +104,11 @@ greet.call(person, 'hi');
 
 
 // MAP
-// const num = [1, 2, 3, 4];
-// const mapDouble = num.map((a) => {
-//   return a * 2;
-// });
-// console.log(mapDouble);
+const num = [1, 2, 3, 4, 6];
+const mapDouble = num.map((a) => {
+  return a * 2;
+});
+console.log(mapDouble);
 
 
 // FILTER
