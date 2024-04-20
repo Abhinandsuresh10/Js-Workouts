@@ -41,13 +41,13 @@ const sportsLeague = {
 //-----------------------------------------------------------------------------------------------------------//
 
 //CALL//
-// const person = {
-//    name: 'vishnu'
-// };
-// function greet(message){
-//     console.log(message + ' '+ this.name)
-// }
-// greet.call(person, 'hi');
+const person = {
+   name: 'vishnu'
+};
+function greet(message){
+    console.log(message + ' '+ this.name)
+}
+greet.call(person, 'hi');
 
 
 //APPLY//
@@ -121,21 +121,8 @@ const sportsLeague = {
 // console.log(evenNumbers);
 
 
-// PURE FUNCTION
-// (function () {
-//     console.log('Hello');
-// })();
-
-
-// AKSHAY SAINI
-
-getName();
-
-
-var x = 10;
-console.log(x);
-
-function getName() {
-    console.log('Hello JavaScript');
-}
+// IFFE
+(function () {
+    console.log('Hello');
+})();
 

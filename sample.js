@@ -145,3 +145,98 @@
 
 // console.log(`The largest string is : ${newFruits}`);
 //-------------------------------------------------------------------------//
+
+
+//-------------------Length of strings in array-------------------//
+// const arr = ["apple", "banana", "orange", "grape"];
+// const lengths = arr.map(arr =>arr.length);
+
+// console.log(lengths);
+//-------------------------------------------------------------------------//
+
+
+//-------------------CALL-------------------//
+// const person = {
+//     name: 'vishnu',
+//     age: 24
+// }
+
+// function greet(message) {
+//     console.log(message+ ' '+this.name);
+// }
+
+// greet.call(person, 'Helloo')
+//-------------------------------------------------------------------------//
+
+
+//-------------------APPLY-------------------//
+// const person = {
+//     name: 'Vishnu',
+//     age: 24
+// }
+
+// function greet(message) {
+//     console.log(message+ ' '+this.name);
+// }
+
+// greet.bindy(person, ['hello dear']);
+//-------------------------------------------------------------------------//
+
+
+//-------------------BIND-------------------//
+// const person = {
+//     name: 'Vishnu',
+//     age: 24
+// }
+
+// function greet(message) {
+//     console.log(message+ ' '+this.name);
+// }
+
+// wish = greet.bind(person, ['hello dear']);
+// wish();
+//-------------------------------------------------------------------------//
+
+
+//-------------------Array Destructuring-------------------//
+const colors = ['red', 'green', 'blue'];
+
+const [first, second, third] = colors;
+
+console.log(first);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Object Destructuring-------------------//
+const person = {
+    name: 'Vishnu',
+    age: 24,
+    city: 'Calicut'
+};
+
+const { name, age, city } = person;
+
+console.log(age);
+//-------------------------------------------------------------------------//
+
+
+//-------------------A-------------------//
+
+//-------------------------------------------------------------------------//
+
+
+
+
+
+
+// a => a;
+
+// const message = () => {
+//     console.log('hello');
+// };
+
+const sum = (a,b) => {
+    return a + b;
+}
+
+sum(10, 20);
