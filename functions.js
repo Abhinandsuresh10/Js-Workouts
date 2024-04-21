@@ -33,6 +33,7 @@
 // console.log(random(10000));
 
 
+
 //------------Pure Functions------------//
 // function add(a, b) {
 //     return a + b;
@@ -42,16 +43,18 @@
 // console.log(result);
 
 
+
 //------------Impure Functions------------//
-let total = 5;
+// let total = 5;
 
-function addTotal(num) {
-    total += num;
-}
+// function addTotal(num) {
+//     total += num;
+// }
 
-addTotal(5);
+// addTotal(5);
 
-console.log(total);
+// console.log(total);
+
 
 
 //------------Generator functions------------//
@@ -71,6 +74,7 @@ console.log(total);
 // console.log(sequence.next());
 
 
+
 //---Generate multiples on each seconds---//
 // function* GeneratorFunction(a) {
 //     for (let i = 1; i <=10; i++){
@@ -87,3 +91,22 @@ console.log(total);
 // setTimeout(() => {
 //     clearInterval(set)
 // }, 11000);
+
+
+
+// Generate even numbers
+function* GeneratorFunction(num) {
+    for (let i = 0; i <= 10;i++) {
+        yield num += 2;
+    }
+}
+
+let generator = GeneratorFunction(0);
+
+let set = setInterval(() => {
+    console.log(generator.next().value);
+}, 1000);
+
+setTimeout(() => {
+    clearInterval(set)
+}, 11000);

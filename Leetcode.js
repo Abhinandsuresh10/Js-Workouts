@@ -1,14 +1,14 @@
 // Delete Duplcates
-const arr = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
-const uniqueArray = [];
+// const arr = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+// const uniqueArray = [];
 
-for (let i = 0; i < arr.length; i++) {
-    if (!uniqueArray.includes(arr[i])) {
-        uniqueArray.push(arr[i]);
-    }
-}
+// for (let i = 0; i < arr.length; i++) {
+//     if (!uniqueArray.includes(arr[i])) {
+//         uniqueArray.push(arr[i]);
+//     }
+// }
 
-console.log(uniqueArray);
+// console.log(uniqueArray);
 
 
 //Basic method delete duplicate
@@ -41,21 +41,31 @@ console.log(uniqueArray);
 
 
 // Prime
-function prime(n){
-    let flag=0;
-    for(i=2;i<=n/2;i++){
-        if(n%i==0){
-            flag=1;
-            break
-        }
-    }
-    if(flag==0){
-        console.log(`${n} is a prime number.`);
-    }
-    else{
-        console.log(`${n} is not prime number.`);
-    } 
+// function prime(n){
+//     let flag = 0;
+//     for (let i = 2; i <= n / 2; i++){
+//         if (n % i == 0) {
+//             flag = 1;
+//             break
+//         }
+//     }
+//     if(flag==0){
+//         console.log(`${n} is a prime number.`);
+//     }
+//     else{
+//         console.log(`${n} is not prime number.`);
+//     }
+// }
+
+// prime(29)
+// prime(4)
+
+
+// Prime Numbers
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let isPrime = [];
+
+for (let i = 0; i < arr.length; i++){
+    
 }
 
-prime(29)
-prime(4)
