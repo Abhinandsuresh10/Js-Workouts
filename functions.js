@@ -95,18 +95,16 @@
 
 
 // Generate even numbers
-function* GeneratorFunction(num) {
-    for (let i = 0; i <= 10;i++) {
-        yield num += 2;
-    }
-}
+// function* GeneratorFunction(num) {
+//     for (let i = 0; i <= 10;i++) {
+//         yield num += 2;
+//     }
+// }
 
-let generator = GeneratorFunction(0);
+// let generator = GeneratorFunction(0);
 
-let set = setInterval(() => {
-    console.log(generator.next().value);
-}, 1000);
+// let set = setInterval(() => {
+//     console.log(generator.next().value);
+// }, 1000);
 
-setTimeout(() => {
-    clearInterval(set)
-}, 11000);
+

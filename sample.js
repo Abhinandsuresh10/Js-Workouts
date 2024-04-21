@@ -199,44 +199,97 @@
 
 
 //-------------------Array Destructuring-------------------//
-const colors = ['red', 'green', 'blue'];
+// const colors = ['red', 'green', 'blue'];
 
-const [first, second, third] = colors;
+// const [first, second, third] = colors;
 
-console.log(first);
+// console.log(first);
 //-------------------------------------------------------------------------//
 
 
 //-------------------Object Destructuring-------------------//
-const person = {
-    name: 'Vishnu',
-    age: 24,
-    city: 'Calicut'
-};
-
-const { name, age, city } = person;
-
-console.log(age);
-//-------------------------------------------------------------------------//
-
-
-//-------------------A-------------------//
-
-//-------------------------------------------------------------------------//
-
-
-
-
-
-
-// a => a;
-
-// const message = () => {
-//     console.log('hello');
+// const person = {
+//     name: 'Vishnu',
+//     age: 24,
+//     city: 'Calicut'
 // };
 
-const sum = (a,b) => {
-    return a + b;
-}
+// const { name, age, city } = person;
 
-sum(10, 20);
+// console.log(age);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Prime Generator-------------------//
+// function primeGenerator(num) {
+//     let count = 0;
+
+//     for (let i = 3; i < 1000; i++){
+//         let flag = 0
+//         for (let j = 2; j < i; j++){
+//             if (i % j == 0) {
+//                 flag = 1;
+//                 break
+//             }
+//         }
+
+//         if (flag == 0 && count < num) {
+//             console.log(i);
+//             count++
+//         }
+//     }
+// }
+
+// primeGenerator(10);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Prime from Array-------------------//
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// for (let i = 0; i < arr.length; i++) {
+//     let flag = 0;
+//     for (let j = 2; j < arr[i]; j++) {
+//         if (arr[i] % j === 0) {
+//             flag = 1;
+//             break;
+//         }
+//     }
+//     if (flag === 0) {
+//         console.log(arr[i]);
+//     }
+// }
+//-------------------------------------------------------------------------//
+
+
+//-------------------Prime using Filter-------------------//
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const primeNumbers = arr.filter(num => {
+//     if (num <= 1) {
+//         return false;
+//     }
+//     for (let i = 2; i < Math.sqrt(num); i++) {
+//         if (num % 2 == 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// });
+
+// console.log(primeNumbers);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Filter Even Numbers-------------------//
+// const array = [1, 3, 2, 5, 4, 7, 6, 9, 8];
+
+// const evenArray = array.filter(num => num % 2 == 0)
+
+// console.log(evenArray);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Reduce Sum of Array-------------------//
+
+//-------------------------------------------------------------------------//
