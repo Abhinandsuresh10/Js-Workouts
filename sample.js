@@ -221,26 +221,26 @@
 
 
 //-------------------Prime Generator-------------------//
-// function primeGenerator(num) {
-//     let count = 0;
+function primeGenerator(num) {
+    let count = 0;
 
-//     for (let i = 3; i < 1000; i++){
-//         let flag = 0
-//         for (let j = 2; j < i; j++){
-//             if (i % j == 0) {
-//                 flag = 1;
-//                 break
-//             }
-//         }
+    for (let i = 3; i < 1000; i++){
+        let flag = 0
+        for (let j = 2; j < i; j++){
+            if (i % j == 0) {
+                flag = 1;
+                break
+            }
+        }
 
-//         if (flag == 0 && count < num) {
-//             console.log(i);
-//             count++
-//         }
-//     }
-// }
+        if (flag == 0 && count < num) {
+            console.log(i);
+            count++
+        }
+    }
+}
 
-// primeGenerator(10);
+primeGenerator(10);
 //-------------------------------------------------------------------------//
 
 
@@ -291,5 +291,9 @@
 
 
 //-------------------Reduce Sum of Array-------------------//
+const array = [1, 3, 2, 5, 4, 7, 6, 9, 8];
 
+const sum = array.reduce((acc, curr) => acc + curr, 0)
+
+console.log(sum);
 //-------------------------------------------------------------------------//
