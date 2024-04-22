@@ -221,26 +221,26 @@
 
 
 //-------------------Prime Generator-------------------//
-function primeGenerator(num) {
-    let count = 0;
+// function primeGenerator(num) {
+//     let count = 0;
 
-    for (let i = 3; i < 1000; i++){
-        let flag = 0
-        for (let j = 2; j < i; j++){
-            if (i % j == 0) {
-                flag = 1;
-                break
-            }
-        }
+//     for (let i = 3; i < 1000; i++){
+//         let flag = 0
+//         for (let j = 2; j < i; j++){
+//             if (i % j == 0) {
+//                 flag = 1;
+//                 break
+//             }
+//         }
 
-        if (flag == 0 && count < num) {
-            console.log(i);
-            count++
-        }
-    }
-}
+//         if (flag == 0 && count < num) {
+//             console.log(i);
+//             count++
+//         }
+//     }
+// }
 
-primeGenerator(10);
+// primeGenerator(10);
 //-------------------------------------------------------------------------//
 
 
@@ -291,9 +291,26 @@ primeGenerator(10);
 
 
 //-------------------Reduce Sum of Array-------------------//
-const array = [1, 3, 2, 5, 4, 7, 6, 9, 8];
+// const array = [1, 3, 2, 5, 4, 7, 6, 9, 8];
 
-const sum = array.reduce((acc, curr) => acc + curr, 0)
+// const sum = array.reduce((acc, curr) => acc + curr, 0)
 
-console.log(sum);
+// console.log(`Sum = ${sum}`);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Average with reduce-------------------//
+// const array = [10, 3, 20, 50, 40, 7, 60, 9, 80];
+
+// const sumArr = array.reduce((acc, curr) => acc + curr, 0)
+
+// const avgArr = sumArr / array.length;
+
+// console.log(`Sum = ${sumArr}`);
+// console.log(`Average = ${avgArr}`)
+//-------------------------------------------------------------------------//
+
+
+//-------------------Delete multiples of 3-------------------//
+const arr = [2, 9, 12, 10, 6, 3, 18];
 //-------------------------------------------------------------------------//
