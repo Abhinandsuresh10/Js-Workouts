@@ -17,7 +17,8 @@
 
 
 
-// FOR EACH LOOP
+
+// FOR EACH is a Array Method
 // const array = ['a', 'b', 'c'];
 
 // array.forEach((element, index) => {

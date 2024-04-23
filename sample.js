@@ -1,4 +1,4 @@
-//-----Sort 'a' named friuts and capitalize 'A' -----//
+//--------------Sort 'a' named friuts and capitalize 'A' --------------//
 // const fruits = ["apple", "orange", "anar", "grape"];
 // let newFruits = [];
 // let arr = [];
@@ -363,8 +363,9 @@
 //-------------------SPLICE-------------------//
 // const numbers = [1, 2, 3, 4, 5];
 
-// let res = numbers.splice(1, 1, 10);
+// let res = numbers.splice(0,3);
 
+// console.log(numbers);
 // console.log(res);
 //-------------------------------------------------------------------------//
 
@@ -383,6 +384,31 @@
 
 
 //-------------------Sum of all Numbers-------------------//
-const numbers = [1, 2, 3, 4, 5];
- 
+// const numbers = [1, 2, 3, 4, 5];
+// let sum = 0;
+// for (const num of numbers) {
+//     sum += num;
+// }
+// console.log('Sum :', sum);
 //-------------------------------------------------------------------------//
+
+
+//-------------------Double values with for in-------------------//
+// const numbers = [1, 2, 3, 4, 5];
+// for (const index in numbers) {
+//     numbers[index] *= 2;
+// }
+// console.log(numbers);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Sum of keys-------------------//
+// const object = { a: 10, b: 20, c: 20, d: 50 };
+// let sum = 0;
+// for (const key in object) {
+//     sum += object[key];
+// }
+// console.log(`Sum = ${sum}`);
+//-------------------------------------------------------------------------//
+
+
