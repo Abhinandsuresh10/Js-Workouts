@@ -108,3 +108,20 @@
 // }, 1000);
 
 
+// FACTORY FUNCTION
+function factory(name, age) {
+    return {
+        name: name,
+        age: age,
+        greet: function () {
+            console.log(`Hello my name is ${this.name} and iam ${this.age} years old`);
+            
+        }
+    };
+};
+
+const person1 = factory('Vishnu', 24);
+const person2 = factory('John', 30);
+
+person1.greet();
+person2.greet();

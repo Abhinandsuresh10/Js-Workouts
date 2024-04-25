@@ -110,6 +110,7 @@
 //     console.log('Getting data 4....');
 //     await fetchData(4);
 //     console.log('Getting data 5....');
+//     await fetchData(5);
 // }
 
 // getAllData();
@@ -179,7 +180,7 @@
 //     console.log(message+ ' '+this.name);
 // }
 
-// greet.bindy(person, ['hello dear']);
+// greet.bind(person, ['hello dear']);
 //-------------------------------------------------------------------------//
 
 
@@ -412,3 +413,69 @@
 //-------------------------------------------------------------------------//
 
 
+//-------------------Higher Order Functions-------------------//
+// function calculator(a, b, values) {
+//     return values(a, b);
+// }
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// function multiply(a, b) {
+//     return a * b;
+// }
+
+// console.log(calculator(10,40, add));
+// console.log(calculator(2,10, multiply));
+//-------------------------------------------------------------------------//
+
+
+//-------------------Remove Duplicates-------------------//
+// function removeDuplicates(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         for (let j = i + 1; j < array.length; j++) {
+//             if (array[i] === array[j]) {
+//                 array.splice(j, 1);
+//                 j--;
+//             }
+//         }
+//     }
+// }
+
+// const array = [1, 2, 2, 3, 4, 4, 5];
+// removeDuplicates(array);
+// console.log(array);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Set-------------------//
+// const arr = [1, 2, 2, 3, 4, 4, 5];
+
+// const newArr = new Set(arr);
+
+// console.log(newArr);
+//-------------------------------------------------------------------------//
+
+
+//-------------------FLATEN ARRAY-------------------//
+// const nestedArray = [1, [2, 3], [4, [5, 6]]];
+
+// const ans = nestedArray.flat();
+
+// console.log(ans);
+//-------------------------------------------------------------------------//
+
+
+//-------------------FLAT MAP-------------------//
+const arr = [1, 2, 3, 4];
+
+const mappedArray = arr.flatMap((x) => [x * 2, x * 3]);
+
+console.log(mappedArray);
+//-------------------------------------------------------------------------//
+
+
+//-------------------text-------------------//
+
+//-------------------------------------------------------------------------//

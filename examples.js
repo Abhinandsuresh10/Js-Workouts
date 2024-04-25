@@ -159,12 +159,12 @@
 
 //SUM WITH REDUCE//
 
-const a=[1,2,3,4];
-const b=a.reduce(function(acc,curr){
-    let sum=curr+acc;
-    return sum;
-},0)
-console.log(b);
+// const a=[1,2,3,4];
+// const b=a.reduce(function(acc,curr){
+//     let sum=curr+acc;
+//     return sum;
+// },0)
+// console.log(b);
 
 //FIND IN ARRAY METHOD//
 
@@ -246,9 +246,9 @@ console.log(b);
 
 // IMPLICIT//
 
-// const a=10;
-// const b='the num is '+a
-// console.log(typeof b);
+const a=10;
+const b='the num is '+a
+console.log(typeof b);
 
 //ARROW FUNCTION//
 
@@ -1093,18 +1093,18 @@ console.log(b);
 
 
 // Factory Function
-function createPerson(name, age) {
-  return {
-    name: name,
-    age: age,
-    greet: function () {
-      console.log(`hello, my name is ${this.name} and iam ${this.age} years old`);
-    }
-  };
-}
+// function createPerson(name, age) {
+//   return {
+//     name: name,
+//     age: age,
+//     greet: function () {
+//       console.log(`hello, my name is ${this.name} and iam ${this.age} years old`);
+//     }
+//   };
+// }
 
-const person1 = createPerson('Vishnu', 24);
-const person2 = createPerson('Reshna', 24);
+// const person1 = createPerson('Vishnu', 24);
+// const person2 = createPerson('Reshna', 24);
 
-person1.greet();
-person2.greet();
+// person1.greet();
+// person2.greet();
