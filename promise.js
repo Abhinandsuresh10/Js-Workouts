@@ -11,17 +11,17 @@
 
 
 // ODD OR EVEN USING PROMISE //
-// let promise = new Promise((resolve, reject) => {
-//     let num = parseInt(prompt('Enter a number'));
-//     if (num % 2 == 0) {
-//         resolve(`${num} is even number`);
-//     } else {
-//         reject(`${num} is odd number`);
-//     }
-// });
+let promise = new Promise((resolve, reject) => {
+    let num = parseInt(prompt('Enter a number'));
+    if (num % 2 == 0) {
+        resolve(`${num} is even number`);
+    } else {
+        reject(`${num} is odd number`);
+    }
+});
 
-// promise.then((result) => {
-//     console.log(result);
-// }).catch((err) => {
-//     console.log(err);
-// });
+promise.then((result) => {
+    console.log(result);
+}).catch((err) => {
+    console.log(err);
+});

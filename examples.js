@@ -219,11 +219,11 @@
 
 //DEFAULT PARAMETER//
 
-// function a(name='any'){
-//     console.log(`hello ${name}`);
-// }
-// a();
-// a('razik');
+function a(name='any'){
+    console.log(`hello ${name}`);
+}
+a();
+a('Vishnu');
 
 //CURRYING//
 
@@ -246,9 +246,9 @@
 
 // IMPLICIT//
 
-const a=10;
-const b='the num is '+a
-console.log(typeof b);
+// const a=10;
+// const b='the num is '+a
+// console.log(typeof b);
 
 //ARROW FUNCTION//
 
