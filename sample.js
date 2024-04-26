@@ -468,14 +468,37 @@
 
 
 //-------------------FLAT MAP-------------------//
-const arr = [1, 2, 3, 4];
+// const arr = [1, 2, 3, 4];
 
-const mappedArray = arr.flatMap((x) => [x * 2, x * 3]);
+// const mappedArray = arr.flatMap((x) => [x * 2, x * 3]);
 
-console.log(mappedArray);
+// console.log(mappedArray);
 //-------------------------------------------------------------------------//
 
 
-//-------------------text-------------------//
+//-------------------MAP-------------------//
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+// const output = arr.filter((value) => {
+//     if (value % 2 == 0) {
+//         return value
+//     }
+// })
+
+// console.log(output);
 //-------------------------------------------------------------------------//
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (let i = 1; i < arr.length; i++){
+    let flag = 0;
+    for (let j = 2; j < arr[i]; j++){
+        if (arr[i] % j == 0) {
+            flag = 1;
+            break;
+        }
+    }
+    if (flag == 0) {
+        console.log(arr[i]);
+    }
+}
