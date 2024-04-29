@@ -488,17 +488,113 @@
 // console.log(output);
 //-------------------------------------------------------------------------//
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-for (let i = 1; i < arr.length; i++){
-    let flag = 0;
-    for (let j = 2; j < arr[i]; j++){
-        if (arr[i] % j == 0) {
-            flag = 1;
-            break;
-        }
-    }
-    if (flag == 0) {
-        console.log(arr[i]);
-    }
-}
+//-------------------String to Array-------------------//
+// let str = 'Hello Vishnu';
+
+// let newStr = str.split(' ')
+
+// console.log(newStr);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Constructor-------------------//
+// class Person{
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     greet() {
+//         console.log(`Hello my name is ${this.name} and iam ${this.age} years old`);
+//     }
+// }
+
+// const Vishnu = new Person('Vishnu', 24)
+// Vishnu.greet();
+//-------------------------------------------------------------------------//
+
+
+//-------------------Shallow Copy-------------------//
+// const Person = {
+//     name: "John",
+//     age: 30,
+//     adress: {
+//       state: "Kerala",
+//       city: "New York"
+//     }
+// };
+
+// const result = {...Person }
+
+// result.adress.city = 'Calicut';
+
+// console.log(Person);
+// console.log(result);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Deep Copy-------------------//
+// const obj = {
+//   name: "John",
+//   age: 30,
+//   adress: {
+//     state: "Kerala",
+//     city: "New York"
+//   }
+// };
+  
+//   const shallowCopy = JSON.parse(JSON.stringify(obj));
+  
+//   shallowCopy.adress.state = 'Delhi';
+  
+//   console.log(obj);
+//   console.log(shallowCopy);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Hoisting-------------------//
+// var x = 20;
+
+// function sum() {
+//   console.log(x);
+//   var x = 10;
+//   console.log(x);
+// }
+// sum();
+//-------------------------------------------------------------------------//
+
+
+//-------------------Largest from three numbers-------------------//
+// let a = 260;
+// let b = 20;
+// let c = 100;
+// let largest;
+
+// if (a > b && a > c) {
+//   largest = a;
+// } else if (b > c) {
+//   largest = b;
+// } else {
+//   largest = c;
+// }
+
+// console.log(`Largest number is ${largest}`);
+//-------------------------------------------------------------------------//
+
+
+//-------------------CURRYING-------------------//
+// function curriedAdd(a) {
+//   return function (b) {
+//     return a + b;
+//   }
+// }
+
+// const addTwo = curriedAdd(2);
+// console.log(addTwo(3));
+//-------------------------------------------------------------------------//
+
+
+//-------------------text-------------------//
+
+//-------------------------------------------------------------------------//

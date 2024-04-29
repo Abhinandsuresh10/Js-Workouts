@@ -26,7 +26,7 @@
 // console.log(uniqueArray);
 
 
-// Two sum
+// 1. Two sum
 // function twosum(arr,target){
 //     for(i=0;i<arr.length;i++){
 //         for(j=i+1;j<arr.length;j++){
@@ -61,4 +61,42 @@
 // prime(4)
 
 
+// 58. Length Of Last Word
+// var lengthOfLastWord = function(str) {
+//     str=str.trim().split(" ")
+//      return str[str.length-1].length
+// };
 
+// console.log(lengthOfLastWord('Hello World'));
+
+
+//-----------------------------------------------------------------------------------//
+// 66. Plus One
+// var plusOne = function(digits) {
+//     let str = digits.join('')
+//     let res = BigInt(str)+1n;
+
+//     return res.toString().split('');
+// };
+
+// // Method 2
+// var plusOne = function(digits) {
+//     // Start from the rightmost digit
+//     for (let i = digits.length - 1; i >= 0; i--) {
+//         // Add 1 to the current digit
+//         digits[i]++;
+        
+//         // If the digit becomes less than 10 after adding 1, we're done
+//         if (digits[i] < 10) {
+//             return digits;
+//         } else {
+//             // If it's 10, set it to 0 and continue to the next digit
+//             digits[i] = 0;
+//         }
+//     }
+    
+//     // If we're here, it means all digits were 9, so add a new digit of 1 at the beginning
+//     digits.unshift(1);
+//     return digits;
+// };
+//-----------------------------------------------------------------------------------//

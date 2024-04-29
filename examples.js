@@ -219,11 +219,11 @@
 
 //DEFAULT PARAMETER//
 
-function a(name='any'){
-    console.log(`hello ${name}`);
-}
-a();
-a('Vishnu');
+// function a(name='any'){
+//     console.log(`hello ${name}`);
+// }
+// a();
+// a('Vishnu');
 
 //CURRYING//
 
@@ -1108,3 +1108,11 @@ a('Vishnu');
 
 // person1.greet();
 // person2.greet();
+
+
+// Instgram
+// const obj = { prop: 10 };
+// const arr = [obj];
+// arr[0].prop = 20;
+
+// console.log(obj.prop);

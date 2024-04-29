@@ -1,11 +1,11 @@
-let obj = {
-    name: 'vishnu',
-    age: 24,
-    contact: {
-        phone: 8848881691,
-        email: 'vishnu@gmail.com'
-    }
-};
+// let obj = {
+//     name: 'vishnu',
+//     age: 24,
+//     contact: {
+//         phone: 8848881691,
+//         email: 'vishnu@gmail.com'
+//     }
+// };
 
 //---object into array---//
 // let newObject = Object.keys(obj);
@@ -18,8 +18,8 @@ let obj = {
 
 
 //---object seal---//
-Object.seal(obj);
-obj.name = "John";
+// Object.seal(obj);
+// obj.name = "John";
 
-console.log(obj);
+// console.log(obj);
 
