@@ -226,17 +226,17 @@
 //     let count = 0;
 
 //     for (let i = 3; i < 1000; i++){
-//         let flag = 0
+//       let flag = 0
 //         for (let j = 2; j < i; j++){
 //             if (i % j == 0) {
-//                 flag = 1;
-//                 break
+//               flag = 1;
+//               break
 //             }
 //         }
 
 //         if (flag == 0 && count < num) {
-//             console.log(i);
-//             count++
+//           console.log(i);
+//           count++
 //         }
 //     }
 // }
@@ -595,6 +595,83 @@
 //-------------------------------------------------------------------------//
 
 
-//-------------------text-------------------//
+//-------------------Object Spread & Change Property-------------------//
+// const originalObject = {
+//   name: "John",
+//   age: 30,
+//   address: {
+//     city: "New York",
+//     country: "USA"
+//   }
+// };
 
+// const modifiedObject = {
+//   ...originalObject,
+//   age: 35
+// };
+
+// console.log(modifiedObject);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Delete & Add Key from object-------------------//
+// const obj = {
+//   name: "Vishnu",
+//   age: 30,
+//   city: "Calicut"
+// };
+
+// obj.mob = 8848881691 // adding new key
+// delete (obj.age); // deleting key
+
+// console.log(obj);
+//-------------------------------------------------------------------------//
+
+
+//-------------------REDUCE sum mixed array-------------------//
+// const arr = [10, 40, 'hello', 20, 'a', 30];
+
+// const res= arr.reduce((acc, curr) => {
+//   if (typeof curr == 'number') {
+//     return acc + curr;
+//   } else {
+//     return acc;
+//   }
+// },0);
+
+// console.log(res);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Reverse Array using Reduce-------------------//
+// const arr = [1,2,3,4];
+
+// const removeDuplicates = arr.reduce((acc, curr) => [curr, ...acc], [])
+
+// console.log(removeDuplicates);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Math methods-------------------//
+console.log(Math.abs(-5)); // Output: 5
+console.log(Math.abs(3));  // Output: 3
+
+console.log(Math.round(4.7)); // Output: 5
+console.log(Math.round(4.2)); // Output: 4
+
+console.log(Math.floor(4.7)); // Output: 4
+console.log(Math.floor(4.2)); // Output: 4
+
+console.log(Math.ceil(4.7)); // Output: 5
+console.log(Math.ceil(4.2)); // Output: 5
+
+console.log(Math.min(5, 10, -3, 8)); // Output: -3
+
+console.log(Math.max(5, 10, -3, 8)); // Output: 10
+
+console.log(Math.random()); // Output: a random number between 0 and 1
+
+console.log(Math.pow(2, 3)); // Output: 8 (2^3)
+
+console.log(Math.sqrt(9)); // Output: 3
 //-------------------------------------------------------------------------//
