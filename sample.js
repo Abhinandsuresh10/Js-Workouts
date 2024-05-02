@@ -271,7 +271,7 @@
 //         return false;
 //     }
 //     for (let i = 2; i < Math.sqrt(num); i++) {
-//         if (num % 2 == 0) {
+//         if (num % i == 0) {
 //             return false;
 //         }
 //     }
@@ -279,7 +279,7 @@
 // });
 
 // console.log(primeNumbers);
-//-------------------------------------------------------------------------//
+// -------------------------------------------------------------------------//
 
 
 //-------------------Filter Even Numbers-------------------//
@@ -646,32 +646,79 @@
 //-------------------Reverse Array using Reduce-------------------//
 // const arr = [1,2,3,4];
 
-// const removeDuplicates = arr.reduce((acc, curr) => [curr, ...acc], [])
+// const reverseArr = arr.reduce((acc, curr) => [curr, ...acc], [])
 
-// console.log(removeDuplicates);
+// console.log(reverseArr);
 //-------------------------------------------------------------------------//
 
 
 //-------------------Math methods-------------------//
-console.log(Math.abs(-5)); // Output: 5
-console.log(Math.abs(3));  // Output: 3
+// console.log(Math.abs(-5)); // Output: 5
+// console.log(Math.abs(3));  // Output: 3
 
-console.log(Math.round(4.7)); // Output: 5
-console.log(Math.round(4.2)); // Output: 4
+// console.log(Math.round(4.7)); // Output: 5
+// console.log(Math.round(4.2)); // Output: 4
 
-console.log(Math.floor(4.7)); // Output: 4
-console.log(Math.floor(4.2)); // Output: 4
+// console.log(Math.floor(4.7)); // Output: 4
+// console.log(Math.floor(4.2)); // Output: 4
 
-console.log(Math.ceil(4.7)); // Output: 5
-console.log(Math.ceil(4.2)); // Output: 5
+// console.log(Math.ceil(4.7)); // Output: 5
+// console.log(Math.ceil(4.2)); // Output: 5
 
-console.log(Math.min(5, 10, -3, 8)); // Output: -3
+// console.log(Math.min(5, 10, -3, 8)); // Output: -3
 
-console.log(Math.max(5, 10, -3, 8)); // Output: 10
+// console.log(Math.max(5, 10, -3, 8)); // Output: 10
 
-console.log(Math.random()); // Output: a random number between 0 and 1
+// console.log(Math.random()); // Output: a random number between 0 and 1
 
-console.log(Math.pow(2, 3)); // Output: 8 (2^3)
+// console.log(Math.pow(2, 3)); // Output: 8 (2^3)
 
-console.log(Math.sqrt(9)); // Output: 3
+// console.log(Math.sqrt(9)); // Output: 3
 //-------------------------------------------------------------------------//
+
+
+//-------------------Sum of even numbers-------------------//
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const evenSum = arr.filter(x => x % 2 === 0).reduce((acc, curr) => acc + curr, 0);
+
+// console.log(`Sum of even numbers : ${evenSum}`);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Sum of Prime using Filter & Reduce-------------------//
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const primeSum = arr.filter((value) => {
+//     if (value <= 1) {
+//         return false;
+//     }
+//     for (let i = 2; i <= Math.sqrt(value); i++) {
+//         if (value % i === 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }).reduce((acc,curr)=>acc+curr,0)
+
+// console.log(`sum of prime numbers : ${primeSum}`);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Array Frequency-------------------//
+function frequency(array){
+    let freqArr = [];
+    for (i = 0; i < array.length; i++){
+        if (array.indexOf(array[i]) !== array.lastIndexOf(array[i])) {
+            freqArr.push(array[i])
+        }
+    }
+    return freqArr;
+}
+
+const arr = [1, 2, 3, 3, 4, 5, 1, 2, 3, 6];
+console.log(frequency(arr));
+//-------------------------------------------------------------------------//
+
+
+

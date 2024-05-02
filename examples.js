@@ -367,6 +367,7 @@
 // });
 // console.log(b);
 
+
 //FOR OF//
 
 // const a=[1,2,3,4];
@@ -642,13 +643,13 @@
 
 // OPTIONAL CHAINING//
 
-// const user = {
-//    name: 'John',
-//    address: {
-//        city: 'New York',
-//        postalCode: '10001'
-//    }
-// };
+const user = {
+   name: 'John',
+   address: {
+       city: 'New York',
+       postalCode: '10001'
+   }
+};
 
 // // Without optional chaining (may throw error if address is undefined)
 // const city = user.address.city; // 'New York'
