@@ -59,9 +59,9 @@
 
 
 //--------string reverse--------//
-let str = 'Hello World';
-let newStr = str.split(' ').reverse().join(' ');
-console.log(newStr);
+// let str = 'Hello World';
+// let newStr = str.split(' ').reverse().join(' ');
+// console.log(newStr);
 //-----------------------------//
 
 

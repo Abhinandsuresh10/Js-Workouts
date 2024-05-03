@@ -234,14 +234,14 @@
 //             }
 //         }
 
-//         if (flag == 0 && count < num) {
+//         if (flag == 0 && count <= num) {
 //           console.log(i);
 //           count++
 //         }
 //     }
 // }
 
-// primeGenerator(10);
+// primeGenerator(2);
 //-------------------------------------------------------------------------//
 
 
@@ -445,7 +445,6 @@
 
 // const array = [1, 2, 2, 3, 4, 4, 5];
 // removeDuplicates(array);
-// console.log(array);
 //-------------------------------------------------------------------------//
 
 
@@ -706,19 +705,108 @@
 
 
 //-------------------Array Frequency-------------------//
-function frequency(array){
-    let freqArr = [];
-    for (i = 0; i < array.length; i++){
-        if (array.indexOf(array[i]) !== array.lastIndexOf(array[i])) {
-            freqArr.push(array[i])
-        }
-    }
-    return freqArr;
-}
+// function frequency(array){
+//     let freqArr = [];
+//     for (i = 0; i < array.length; i++){
+//         if (array.indexOf(array[i]) !== array.lastIndexOf(array[i])) {
+//             freqArr.push(array[i])
+//         }
+//     }
+//     return freqArr;
+// }
 
-const arr = [1, 2, 3, 3, 4, 5, 1, 2, 3, 6];
-console.log(frequency(arr));
+// const arr = [1, 2, 3, 3, 4, 5, 1, 2, 3, 6];
+// console.log(frequency(arr));
 //-------------------------------------------------------------------------//
 
 
+//-------------------Objects inside array-------------------//
+// const a = [{ a: 10 }, { a: 50 }, { a: 20 }, { a: 40 }, { a: 30 }];
 
+// const largest = a.reduce((acc, curr) => {
+//     if (acc.a < curr.a) {
+//         return curr;
+//     }
+//     return acc;
+// }, a[0]);
+
+// console.log(largest);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Remove largest element-------------------//
+// const arr = [10, 30, 80, 40, 20];
+
+// let max = arr[0];
+
+// let result = arr.forEach(element => {
+//     if (element > max) {
+//         max = element;
+//     }
+// });
+
+// let maxIndex = arr.indexOf(max);
+// arr.splice(maxIndex, 1);
+
+// console.log(arr);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Remove largest element-------------------//
+// const arr = [10, 30, 80, 40, 20];
+
+// const max = arr.indexOf(Math.max(...arr));
+
+// arr.splice(max, 1);
+
+// console.log(arr);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Remove Duplicates-------------------//
+// const arr = [1, 2, 1, 3, 4, 5, 5, 7, 8, 9, 2, 1, 5];
+
+// const a = arr.sort().splice(arr,2)
+
+// console.log(a)
+//-------------------------------------------------------------------------//
+
+
+//-------------------Even Number Generator-------------------//
+// function evenGenerator(num) {
+//     let count = 0;
+//     for (let i = 2; count < num; i++) {
+//         if (i % 2 === 0) {
+//             console.log(i);
+//             count++;
+//         }
+//     }
+// }
+
+// evenGenerator(6);
+//-------------------------------------------------------------------------//
+
+
+//-------------------Nullish Operator-------------------//
+// const a = 20;
+// const b = ' ';
+// const c = null;
+// const d = undefined;
+// const e = 'helo';
+
+// const result1 = a ?? 'default';
+// const result2 = b ?? 'default';
+// const result3 = c ?? 'default';
+// const result4 = d ?? 'default';
+// const result5 = e ?? 'default';
+// console.log(result1);
+// console.log(result2);
+// console.log(result3);
+// console.log(result4);
+// console.log(result5);
+//-------------------------------------------------------------------------//
+
+
+//-------------------text-------------------//
+
+//-------------------------------------------------------------------------//
