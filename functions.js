@@ -75,6 +75,7 @@
 
 
 
+
 //---Generate multiples on each seconds---//
 // function* GeneratorFunction(a) {
 //     for (let i = 1; i <=10; i++){
