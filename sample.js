@@ -3,12 +3,14 @@
 // let newFruits = [];
 // let arr = [];
 
+// // Sort 'a' named fruits to new array
 // for (let i = 0; i < fruits.length; i++){
 //     if (fruits[i].charAt(0) == 'a') {
 //         newFruits.push(fruits[i]);
 //     }
 // };
 
+// // uppercase 'A'
 // for (let key of newFruits) { //for of loop
 //     let updatedKey = key.charAt(0).toUpperCase() + key.slice(1);
 //     arr.push(updatedKey)
@@ -505,7 +507,7 @@
 //     }
 
 //     greet() {
-//         console.log(`Hello my name is ${this.name} and iam ${this.age} years old`);
+//         console.log(`Hello my name is ${this.name} and iam ${this.age} years old`); 
 //     }
 // }
 
@@ -516,7 +518,7 @@
 
 //-------------------Shallow Copy-------------------//
 // const Person = {
-//     name: "John",
+//     name: "John", 
 //     age: 30,
 //     adress: {
 //       state: "Kerala",
@@ -763,15 +765,6 @@
 //-------------------------------------------------------------------------//
 
 
-//-------------------Remove Duplicates-------------------//
-// const arr = [1, 2, 1, 3, 4, 5, 5, 7, 8, 9, 2, 1, 5];
-
-// const a = arr.sort().splice(arr,2)
-
-// console.log(a)
-//-------------------------------------------------------------------------//
-
-
 //-------------------Even Number Generator-------------------//
 // function evenGenerator(num) {
 //     let count = 0;
@@ -836,6 +829,58 @@
 //-------------------------------------------------------------------------//
 
 
-//-------------------Haii-------------------//
+//-------------------Count of Vowels-------------------//
+// const str = "UnderCoverAgent";
+// let count = 0;
+// for (const words of str) {
+//     const char = words.toLowerCase();
+//     if (char=='a'||char=='e'||char=='i'||char=='o'||char=='u') {
+//         count++;
+//     }
+// };
+
+// console.log(`count of vowels in ${str} = ${count}`);
+//-------------------------------------------------------------------------//
+
+
+//-------------------AsyncAwait-------------------//
+// function fetchData() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve({ name: "Vishnu", age: 24, city: "Kozhikode" });
+//         }, 3000)
+//     });
+// }
+
+// async function fetchUserData() {
+//     console.log('Fetching user data.....');
+//     const data = await fetchData();
+//     console.log(data);
+// }
+
+// fetchUserData();
+//-------------------------------------------------------------------------//
+
+
+//-------------------Loop an object to print key value-------------------//
+// const obj = {
+//     name: 'Vishnu',
+//     age: 24,
+//     location: 'Kerala'
+// };
+
+// for (let key in obj) {
+//     console.log(key);
+//     // console.log(`${key}: ${obj[key]}`);
+// };
+//-------------------------------------------------------------------------//
+
+
+//-------------------jjjjj-------------------//
 
 //-------------------------------------------------------------------------//
+
+
+
+
+
