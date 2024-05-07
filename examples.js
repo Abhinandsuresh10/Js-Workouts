@@ -1034,7 +1034,7 @@ const user = {
 //   console.log("This is an IIFE!");
 // })();
 
-// (function () {
+// (function () { 
 //    console.log('This is a sample');
 // })();
 
