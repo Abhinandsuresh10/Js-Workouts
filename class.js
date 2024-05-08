@@ -9,18 +9,17 @@
 
 
 //PROTOTYPE
-// function Person(name, age) {
-//    this.name = name;
-//    this.age = age;
-// }
+function Person(name, age) {
+   this.name = name;
+   this.age = age;
+}
 
-// Person.prototype.sayHello = function() {
-//    console.log("Hello, my name is " + this.name + " and I'm " + this.age + " years old.");
-// };
+Person.prototype.sayHello = function() {
+   console.log("Hello, my name is " + this.name + " and I'm " + this.age + " years old.");
+};
 
-// const person1 = new Person("Alice", 30);
+const person1 = new Person("Alice", 30);
 
-// console.log(person1.name);
-// console.log(person1.age);
-// person1.sayHello();
-
+console.log(person1.name);
+console.log(person1.age);
+person1.sayHello();

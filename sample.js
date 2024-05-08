@@ -508,9 +508,9 @@
 //     greet() {
 //         console.log(`Hello my name is ${this.name} and iam ${this.age} years old`); 
 //     }
-// }
+// };
 
-// const Vishnu = new Person('Vishnu', 24)
+// const Vishnu = new Person('Vishnu', 24);
 // Vishnu.greet();
 //-------------------------------------------------------------------------//
 
@@ -544,12 +544,12 @@
 //   }
 // };
   
-//   const shallowCopy = JSON.parse(JSON.stringify(obj));
+//   const deepCopy = JSON.parse(JSON.stringify(obj));
   
-//   shallowCopy.adress.state = 'Delhi';
+//   deepCopy.adress.state = 'Delhi';
   
 //   console.log(obj);
-//   console.log(shallowCopy);
+//   console.log(deepCopy);
 //-------------------------------------------------------------------------//
 
 
