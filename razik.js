@@ -120,13 +120,13 @@
 
 // CHECK AN ARRAY EMPTY OR NOT//
 
-// const a=[2,3,3]
-// if(a.length==0){
-//     console.log('empty')
-// }
-// else{
-//     console.log('not')
-// }
+const a=[2,3,3]
+if(a.length==0){
+    console.log('empty')
+}
+else{
+    console.log('not')
+}
 
 //CHECK IF AN OBJECT EMPTY OR NOT//
 
