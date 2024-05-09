@@ -68,14 +68,7 @@
 // const a= new my('razik',18)
 // a.greet()
 
-//REVERSE FIRST AND LAST INDEX//
 
-const a=[1,2,3,4,5]
-let temp;
-temp=a[a.length-1]
-a[a.length-1]=a[0]
-a[0]=temp
-console.log(a)
 
 //REPLACE A WITH E//
 
