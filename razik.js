@@ -69,37 +69,6 @@
 // a.greet()
 
 
-
-//REPLACE A WITH E//
-
-// let a='malayalam';
-// const b=a.split('')
-// const c=b.map((num)=>{
-//     if(num=='a'){
-//         return 'e'
-//     }
-//     else{
-//         return num
-//     }
-// })
-// console.log(c.join(''))
-
-//SORT TWO ARRAY//
-
-// const a=[1,3,5]
-// const b=[2,4,6]
-// const c=[...a,...b]
-// for(let i=0;i<c.length;i++){
-//     for(j=i+1;j<c.length;j++){
-//         if(c[j]<c[i]){
-//             temp=c[j]
-//             c[j]=c[i]
-//             c[i]=temp
-//         }
-//     }
-// }
-// console.log(c)
-
 //ARRAY TO STRING//
 
 // const a=[[1,2],[3,4]]
@@ -120,25 +89,19 @@
 
 // CHECK AN ARRAY EMPTY OR NOT//
 
-const a=[2,3,3]
-if(a.length==0){
-    console.log('empty')
-}
-else{
-    console.log('not')
-}
+
 
 //CHECK IF AN OBJECT EMPTY OR NOT//
 
-//  const a={
-//     name:'razik'
-//  }
-//  if(Object.entries(a)==0){
-//     console.log('empty')
-//  }
-//  else{
-//     console.log('not')
-//  }
+ const a={
+    name:'razik'
+ }
+ if(Object.entries(a)==0){
+    console.log('empty')
+ }
+ else{
+    console.log('not')
+ }
 
 //SUM //
 
@@ -227,3 +190,26 @@ else{
 //     console.log(b.next().value)
 // }
 // setInterval(c, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const a=[2,3,3]
+if(a.length==0){
+    console.log('empty')
+}
+else{
+    console.log('not')
+}

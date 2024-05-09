@@ -916,5 +916,59 @@
 
 
 //-------------------REPLACE A WITH E-------------------//
+// let a = 'malayalam';
+// const b = a.split('')
+// const c=b.map((num)=>{
+//     if(num=='a'){
+//         return 'e'
+//     }
+//     else{
+//         return num
+//     }
+// })
+// console.log(c.join(''));
+//-------------------------------------------------------------------------//
 
+
+//-------------------Sort Two Arrays-------------------//
+// const a = [1, 3, 5];
+// const b = [2, 4, 6];
+
+// const c = [...a, ...b];
+
+// for(let i=0;i<c.length;i++){
+//     for(j=i+1;j<c.length;j++){
+//         if(c[j]<c[i]){
+//             temp = c[j];
+//             c[j] = c[i];
+//             c[i] = temp;
+//         }
+//     }
+// }
+// console.log(c);
+//-------------------------------------------------------------------------//
+
+
+//-------------------CHECK AN ARRAY EMPTY OR NOT-------------------//
+// const a = [2, 3, 3];
+// if(a.length==0){
+//     console.log('Array is empty');
+// }
+// else{
+//     console.log('Array is not empty');
+// }
+//-------------------------------------------------------------------------//
+
+
+//-------------------CHECK IF AN OBJECT EMPTY OR NOT-------------------//
+// const person = {
+//     name: 'John',
+//     age: 25
+// }
+
+// if (Object.entries(person) == 0) {
+//     console.log('Empty');
+// } else {
+//     console.log('Not empty');
+// }
 //-------------------------------------------------------------------------//
