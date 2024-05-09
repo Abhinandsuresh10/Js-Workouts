@@ -108,5 +108,3 @@
 // const newArray = myArray.join(' ');
 
 // console.log(newArray);
-
-

@@ -7,17 +7,15 @@
 // function hello(name) {
 //     console.log(`hello ${name}`);
 // };
-// hello('Ressshhh')
-
+// hello('John')
+//-------------------------------------------------------------------------//
 
 
 //------------Anonymous Functions------------//
 // (function () {
 //     console.log('Hello');
 // })();
-
-
-
+//-------------------------------------------------------------------------//
 
 
 //------------Pure Functions------------//
@@ -27,7 +25,7 @@
 
 // const result = add(10,10);
 // console.log(result);
-
+//-------------------------------------------------------------------------//
 
 
 //------------Impure Functions------------//
@@ -40,7 +38,7 @@
 // addTotal(5);
 
 // console.log(total);
-
+//-------------------------------------------------------------------------//
 
 
 //------------Generator functions------------//
@@ -58,11 +56,10 @@
 
 // console.log(sequence.next())
 // console.log(sequence.next());
+//-------------------------------------------------------------------------//
 
 
-
-
-//---Generate multiples on each seconds---//
+//-------------------Generate Multiples-------------------//
 // function* GeneratorFunction(a) {
 //     for (let i = 1; i <=10; i++){
 //         yield a * i
@@ -78,10 +75,10 @@
 // setTimeout(() => {
 //     clearInterval(set)
 // }, 11000);
+//-------------------------------------------------------------------------//
 
 
-
-// Generate even numbers
+//-------------------Generate even numbers-------------------//
 // function* GeneratorFunction(num) {
 //     for (let i = 0; i <= 10;i++) {
 //         yield num += 2;
@@ -90,12 +87,42 @@
 
 // let generator = GeneratorFunction(0);
 
-// let set = setInterval(() => {
+// setInterval(() => {
 //     console.log(generator.next().value);
 // }, 1000);
+//-------------------------------------------------------------------------//
 
 
-// FACTORY FUNCTION
+//-------------------Generate Prime Numbers-------------------//
+// function* a() {
+//     let num = 2;
+//     while (true) {
+//         if (prime(num)) {
+//             yield num;
+//         }
+//         num++;
+//     }
+// }
+// function prime(num){
+//     if (num <= 1) {
+//         return false;
+//     }
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i == 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// const b = a();
+
+// setInterval(() => {
+//     console.log(b.next().value)
+// },1000)
+//-------------------------------------------------------------------------//
+
+
+//-------------------Factory Function-------------------//
 // function factory(name, age) {
 //     return {
 //         name: name,
@@ -112,9 +139,10 @@
 
 // person1.greet();
 // person2.greet();
+//-------------------------------------------------------------------------//
 
 
-// Arrow function returning another function
+//-------------------Arrow function returning another function-------------------//
 // const multi = (factor) => {
 //     return (number) => {
 //         return number * factor;
@@ -123,5 +151,5 @@
 
 // const double = multi(2);
 // console.log(double(5));
-
+//-------------------------------------------------------------------------//
 
