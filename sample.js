@@ -506,7 +506,7 @@
 //     }
 
 //     greet() {
-//         console.log(`Hello my name is ${this.name} and iam ${this.age} years old`); 
+//         console.log(`Hello my name is ${this.name} and iam ${this.age} years old`);
 //     }
 // };
 
@@ -517,7 +517,7 @@
 
 //-------------------Shallow Copy-------------------//
 // const Person = {
-//     name: "John", 
+//     name: "John",
 //     age: 30,
 //     adress: {
 //       state: "Kerala",
@@ -880,3 +880,25 @@
 //     console.log('hello IIFE');
 // })();
 //-------------------------------------------------------------------------//
+
+
+//-------------------debugging-------------------//
+// function frequency(array){
+//     let freqArr = [];
+//     for (let i = 0; i < array.length; i++){
+//         console.log("Current element:", array[i]);
+//         console.log("Index of first occurrence:", array.indexOf(array[i]));
+//         console.log("Index of last occurrence:", array.lastIndexOf(array[i]));
+//         if (array.indexOf(array[i]) !== array.lastIndexOf(array[i])) {
+//             freqArr.push(array[i])
+//             console.log("Added element to freqArr:", array[i]);
+//         }
+//     }
+//     return freqArr;
+// }
+
+// const arr = [1, 2, 3, 3, 4, 5, 1, 2, 3, 6];
+// console.log(frequency(arr));
+//-------------------------------------------------------------------------//
+
+

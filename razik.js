@@ -128,7 +128,7 @@
 // CHECK AN ARRAY EMPTY OR NOT//
 
 // const a=[2,3,3]
-// if(a==0){
+// if(a.length==0){
 //     console.log('empty')
 // }
 // else{
@@ -191,17 +191,46 @@
 
 //MAKE FIRST LETTER UPPERCASE WITH FUNCTION//
 
-function a(arr){
-    let array=arr.split(' ')
-    let result=[]
-    for(let i=0;i<array.length;i++){
-       reverse= array[i].charAt(0).toUpperCase()+array[i].slice(1)
-        result.push(reverse)
-    }
-    return result
-}
-const ab='the quick brown fox'
-const b=ab.split(' ')
-console.log(a(ab))
+// function a(arr){
+//     let array=arr.split(' ')
+//     let result=[]
+//     for(let i=0;i<array.length;i++){
+//        reverse= array[i].charAt(0).toUpperCase()+array[i].slice(1)
+//         result.push(reverse)
+//     }
+//     return result
+// }
+// const ab='the quick brown fox'
+// const b=ab.split(' ')
+// console.log(a(ab))
 
 
+
+
+
+
+// function *a(){
+//     let num=2
+//     while(true){
+//         if(prime(num)){
+//             yield num;
+//         }
+//         num++
+//     }
+// }
+// function prime(num){
+//     if(num<=1){
+//         return false;
+//     }
+//     for(let i=2;i<=Math.sqrt(num);i++){
+//         if(num%i==0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// const b = a();
+// function c(){
+//     console.log(b.next().value)
+// }
+// setInterval(c, 1000);

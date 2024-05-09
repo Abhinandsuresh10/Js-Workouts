@@ -7,7 +7,7 @@
 //     console.log('resolve', value);
 // }).catch((err) => {
 //     console.log('failed');
-// })
+// });
 
 
 // ODD OR EVEN USING PROMISE //
