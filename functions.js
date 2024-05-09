@@ -1,11 +1,3 @@
-// function sum(a, b) {
-//     return a + b; // This line returns the result
-// }
-// var result = sum(10, 20);
-// console.log(result); // Output: 30
-
-
-
 //------------Arrow vs Regular------------//
 // const hai = (person) => {
 //     console.log(`hello ${person}`);
@@ -19,18 +11,12 @@
 
 
 
-//------------Anonymous------------//
+//------------Anonymous Functions------------//
 // (function () {
 //     console.log('Hello');
 // })();
 
 
-
-//------------Random------------//
-// function random(number) {
-//     return Math.floor(Math.random() * number);
-// };
-// console.log(random(10000));
 
 
 
@@ -139,19 +125,3 @@
 // console.log(double(5));
 
 
-function* even() {
-    let num = 1;
-    while (true) {
-        if (num % 2 == 0) {
-            yield num;
-        }
-        num++;
-    }
-}
-
-const b = even();
-
-
-setInterval(() => {
-    console.log(b.next().value);
-},1000)
